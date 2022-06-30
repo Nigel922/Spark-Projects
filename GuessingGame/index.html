@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Guessing Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script>
+      let min = 2;
+      let max =22;
+      let target = Math.random() * (max - min + 1); 
+      target = Math.floor(target) + min;
+      let guess = 0;
+      while(guess!=target){
+        guess=prompt("Enter a number between 2 and 22");
+        if(guess<target){
+          alert("Just short of the answer")
+        } else if(guess>target){
+          alert("A bit too high, and not in the good way ;)")
+        }else{
+          alert("Perfect, you go it!!!")
+        }
+      }
+       
+      
+    </script>
+  </body>
+</html>

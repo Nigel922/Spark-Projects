@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangman!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <p id="incorrect"></p>
+      <!-- incorrect letter location-->
+      <p id="revealedText"></p>
+      <!-- correct letter/word location-->
+      <form id="myForm" >
+        <textarea id="attempt" maxlength=1></textarea>  
+        <!-- textbox to input guess-->
+        <!--***<button id="guessbtn" value="guess">guess</button> 
+        I attempted this method but would be redirected to the start of the program     
+        once a letter was guessed***--> 
+        <input type="button" id="guessbtn" value="guess" />
+        <!-- button used to enter guessed letter for result-->
+        <!-- onclick="processGuess();"/>
+       ***not sure if this would have satisfied the "addEventListener" portion of 
+       the project***-->
+      </form>
+      <img id="gallow" src="images/strike-0.png"/>
+    <!-- gallow picture that appears at the start of the game-->
+    </body>
+	
+	<script src="script.js"></script>
+</html>

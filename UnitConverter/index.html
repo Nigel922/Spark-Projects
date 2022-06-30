@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit Converter Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+
+      function ConvertCtoT(){
+        
+        var valToConvert = prompt("Enter cups to convert to teaspoons", "");
+        if (valToConvert > 0){
+          alert(valToConvert * 48 + " teaspoons");
+          }  
+      }
+        function ConvertGtoO(){
+        
+        var valToConvert = prompt("Enter Grams to convert to ounces", "");
+        if (valToConvert > 0){
+          alert(valToConvert / 28 + " ounces");
+          }  
+      }
+       function ConvertMtoK(){
+        
+        var valToConvert = prompt("Enter Miles to convert to Kilometers", "");
+        if (valToConvert > 0){
+          alert(valToConvert * 1.6 + " Kilometers");
+          }  
+      }
+       function ConvertOtoP(){
+        
+        var valToConvert = prompt("Enter Ounces to convert to Pounds", "");
+        if (valToConvert > 0){
+          alert(valToConvert / 16 + " Pounds");
+          }  
+      }
+    </script>
+</head>
+  <body>
+      <main>
+        <h1> Unit Converter Website!</h1>
+          <ul>
+            <a  href="cp-tp.html" onclick="ConvertCtoT()"> Cups to Teaspoons </a>
+            <br/>
+            <a  href="g-oz.html" onclick="ConvertGtoO()"> Grams to Ounces </a>
+            <br/>
+            <a  href="mi-km.html"
+            onclick="ConvertMtoK()"> Miles to Kilometers </a>
+            <br/>
+            <a  href="oz-lb.html"
+            onclick="ConvertOtoP()"> Ounces to Pounds </a>
+          </ul>
+      </main>
+  </body>
+</html>
